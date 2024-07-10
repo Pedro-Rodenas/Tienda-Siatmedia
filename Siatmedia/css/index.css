@@ -1,0 +1,251 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que la cabecera esté por encima de otros elementos */
+}
+
+.direcciones {
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+}
+
+.link-direcciones {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.link-direcciones:hover {
+    background-color: #555;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+    background-color: #222; /* Color de fondo del banner */
+}
+
+.img-portada {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para texto en el banner */
+.h1,
+.p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto para mejor legibilidad */
+    max-width: 80%; /* Limita el ancho del texto para que no se extienda más allá de la imagen */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+}
+
+/* Nosotros */
+.somos {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Sección Necesitas un sitio web */
+.contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.imgs {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Servicios */
+.servicios {
+    padding: 40px;
+    background-color: #f3f3f3;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicios-trabajos {
+    margin: 20px;
+}
+
+.img-trabajos {
+    width: 150px;
+    height: auto;
+}
+
+/* Centro de atención */
+.centro-atencion {
+    padding: 40px;
+    background-color: #ffe1d3;
+}
+
+.atencion {
+    margin: 20px;
+    text-align: center;
+}
+
+.atencion img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Noticias y Otros */
+.noticias {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.noticias1 {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 40px;
+    background-color: #f3f3f3;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactos {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffd700;
+    border-radius: 10px;
+}
+
+.img-contactos {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+}
+
+.xd {
+    margin-bottom: 20px;
+}
+
+.nosotrosxd {
+    margin-bottom: 10px;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    .direcciones {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .contenedor {
+        width: 80%;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+
+    .contenedor2 {
+        flex-direction: column;
+    }
+
+    .img {
+        flex: 1 1 auto;
+    }
+
+    .servicios-trabajos {
+        margin: 10px;
+    }
+
+    .contactos {
+        flex: 1 1 auto;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/iniciarsesion.css">
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img class="logo"
+            src="img/siatmedia_logo.png"
+            alt="logo">
+        </div>
+            <div class="div-titulo">
+                <h1>Iniciar Sesión</h1>
+            </div>
+    </header>
+
+    <div class="padre">
+        <form action="index.html" method="get">
+            <label for="text">Nombre:</label> <br>
+            <input type="text" name="nombre" class="nombre" required> <br>
+            <label for="text">Correo:</label> <br>
+            <input type="email" name="correo" class="correo" required> <br>
+            <label for="text">Contraseña:</label> <br>
+            <input type="password" name="clave" class="calve" required> <br><br>
+
+            <input type="submit" class="enviar" value="Iniciar Sesión">
+        </form>
+    </div>
+    <div class="link">
+        <a class="link-retornar" href="index.html">Retornar a la página principal</a>
+        <br><br>
+        <p>¿No tienes una cuenta?</p>
+        <br>
+        <a class="link-registrar" href="registrarse.html">Puedes registrarte aquí</a>
+    </div>
+</body>
+<script src="js/iniciarsesion.js"></script>
+</html>

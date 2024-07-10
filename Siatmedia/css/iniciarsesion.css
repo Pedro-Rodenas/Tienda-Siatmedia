@@ -1,0 +1,109 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f3f3f3; /* Color de fondo general */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color de texto del encabezado */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo {
+    margin-left: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.div-titulo {
+    flex-grow: 1; /* Hace que este div ocupe el espacio restante */
+}
+
+h1 {
+    margin-right: 20px;
+}
+
+.padre {
+    margin-top: 20px;
+}
+
+form {
+    background-color: #fff; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Ajusta el ancho de los inputs para compensar el padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333; /* Color de fondo del botón */
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.link-retornar,
+.link-registrar {
+    text-decoration: none;
+    color: #333; /* Color de texto de los enlaces */
+}
+
+.link-registrar {
+    font-weight: bold;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila los elementos del encabezado en dispositivos pequeños */
+    }
+
+    .div-logo,
+    .div-titulo {
+        margin: 10px 0;
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+}
